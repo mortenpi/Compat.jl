@@ -48,11 +48,11 @@ Please check the list below for the specific syntax you need.
 
 Currently, the `@compat` macro supports the following syntaxes:
 
-* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload `⋙ Compat 0.7.13`
+* `⋙ Compat 0.7.13` `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
 
-* `@compat(get(io, s, false))`, with `s` equal to `:limit`, `:compact` or `:multiline`, to detect the corresponding print settings (performs useful work only on Julia 0.5, defaults to `false` otherwise) `⋙ Compat 0.8.0`
+* `⋙ Compat 0.8.0` `@compat(get(io, s, false))`, with `s` equal to `:limit`, `:compact` or `:multiline`, to detect the corresponding print settings (performs useful work only on Julia 0.5, defaults to `false` otherwise)
 
-* `@compat Nullable(value, hasvalue)` to handle the switch from the `Nullable` `:isnull` field to `:hasvalue` field ([#18510]) `⋙ Compat 0.9.3`
+* `⋙ Compat 0.9.3` `@compat Nullable(value, hasvalue)` to handle the switch from the `Nullable` `:isnull` field to `:hasvalue` field ([#18510])
 
 * `@compat x .= y` converts to an in-place assignment to `x` (via `broadcast!`) ([#17510]).
   However, beware that `.=` in Julia 0.4 has the precedence of `==`, not of assignment `=`, so if the right-hand-side `y`
