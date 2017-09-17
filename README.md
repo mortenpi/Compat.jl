@@ -75,6 +75,19 @@ Currently, the `@compat` macro supports the following syntaxes:
 
 * [Compat **v0.10.2**] `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload `[Compat v0.10.2]`
 
+* **v0.10.2** `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
+
+* **(v0.10.2)** `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
+
+* **[v0.10.2]** `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
+
+
+* *v0.10.2* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
+
+* *(v0.10.2)* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
+
+* *[v0.10.2]* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
+
 * `@compat(get(io, s, false))`, with `s` equal to `:limit`, `:compact` or `:multiline`, to detect the corresponding print settings (performs useful work only on Julia 0.5, defaults to `false` otherwise)
 
 * `@compat Nullable(value, hasvalue)` to handle the switch from the `Nullable` `:isnull` field to `:hasvalue` field ([#18510])
