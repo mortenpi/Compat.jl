@@ -49,6 +49,14 @@ Please check the list below for the specific syntax you need.
 Currently, the `@compat` macro supports the following syntaxes:
 
 
+* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload `Compat 0.10.2`
+
+* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload _`Compat 0.10.2`_
+
+* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload **`Compat 0.10.2`**
+
+* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload **_`Compat 0.10.2`_**
+
 * `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload (Compat v0.10.2)
 
 * `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload [Compat v0.10.2]
@@ -58,8 +66,6 @@ Currently, the `@compat` macro supports the following syntaxes:
 * `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload `[Compat v0.10.2]`
 
 * `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload _(Compat 0.10)_
-
-* `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload `[Compat v0.10.2]`
 
 * `0.10.2` `@compat (a::B{T}){T}(c) = d` — the Julia 0.5-style call overload
 
